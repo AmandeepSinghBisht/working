@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener....!</title>
+</head>
+<style>
+    #btn{
+        background-color: rgb(43, 189, 189);
+        color: red;
+        border-radius: 20px;
+        margin: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>Event listener</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti aperiam accusamus ipsa quidem placeat, aliquam eveniet enim voluptate eaque minus? Distinctio vel autem debitis, aperiam voluptatum ipsam sed a repudiandae, sequi temporibus quas harum voluptate nobis nesciunt ullam. Minus error atque esse omnis nesciunt sed quis! Odio cum obcaecati nemo eaque id quidem, quasi praesentium delectus itaque laborum fugit, nam animi facere veritatis reiciendis maxime odit voluptates enim aperiam dolorum distinctio quae fugiat possimus. Nihil rerum doloremque rem quibusdam molestiae quas sint. Assumenda nam distinctio provident repudiandae magnam iure labore a eos, accusamus maxime autem recusandae reprehenderit blanditiis! Eius, architecto reprehenderit voluptatibus officiis qui sequi eligendi asperiores illo, molestias hic aliquid distinctio, possimus id provident quo harum? Architecto omnis natus optio animi ex accusamus aspernatur quam, fuga, dolor itaque ea voluptatibus illum dolores eius. Adipisci, asperiores illum nostrum quos, tempore soluta in provident earum nihil assumenda aut esse est harum inventore ea numquam officiis et vitae consectetur. Debitis earum explicabo voluptatibus doloremque adipisci, impedit voluptate vitae esse qui reiciendis, dicta facere molestiae. Iusto, error deleniti! Voluptatem consequatur delectus non assumenda laudantium totam voluptate magni nihil soluta reprehenderit excepturi asperiores, nemo quisquam eos ratione quas fugiat recusandae minus deserunt laboriosam tempora vero. Fugiat sit ipsa reprehenderit iusto soluta exercitationem et quasi, aut blanditiis assumenda quia nulla dolore beatae modi qui atque, delectus ea quas cumque illo? Ex id necessitatibus fugiat sit tempore unde dolorum.</p>
+</div>
+    <button id="btn" onclick="togglebutton()">show/hide</button>
+    <script>
+        function togglebutton(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display='none';
+            } else{
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
